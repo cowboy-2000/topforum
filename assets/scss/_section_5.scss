@@ -1,0 +1,64 @@
+.section_5 {
+  padding: 47px 0;
+  text-align: center;
+  color: $color1;
+
+  @media (min-width: $screen-xl) {
+    padding: 125px 0 82px;
+  }
+
+  &__container {
+    @media (min-width: $screen-xl) {
+      max-width: 1076px;
+    }
+  }
+
+  &__image {
+    margin-left: -$padding1;
+
+    @media (min-width: $screen-xl) {
+      margin-left: -42px;
+      width: 543px;
+    }
+  }
+
+  &__content {
+    @media (min-width: $screen-xl) {
+      margin: 100px 0 0 22px;
+      width: 435px;
+    }
+  }
+
+  &__title {
+    font-size: $fs10;
+    margin-bottom: 12px;
+  }
+
+  &__text {
+    line-height: 24px;
+    opacity: 50%;
+    font-size: $fs7;
+    margin-bottom: 28px;
+
+    @media (min-width: $screen-xl) {
+      margin-bottom: 60px;
+    }
+  }
+
+
+  .stores {
+    @include stores();
+    justify-content: center;
+
+    @media (min-width: $screen-xl) {
+      gap: 0 28px;
+    }
+
+    &__block {
+      @media (min-width: $screen-xl) {
+        width: 165px;
+        height: 52px;
+      }
+    }
+  }
+}

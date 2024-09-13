@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+@font-face {
+  font-family: "Objective";
+  src: url("assets/Objective_OTF/Objective-Medium.otf") format("truetype");
+}
+
+body {
+  font-family: $font2;
+
+  @media (min-width: $screen-xl) {
+    font-family: $font1;
+  }
+}
+
+.site {
+  position: relative;
+}
+
+header {
+  padding: 48px 0 67px;
+  position: relative;
+  text-align: center;
+
+  @media (min-width: $screen-xl) {
+    text-align: left;
+  }
+}
+
+.container {
+  padding: 0 $padding1;
+
+  @media (min-width: $screen-xl) {
+    padding: 0;
+    max-width: 950px;
+  }
+}
+
+.background {
+  background: $gradient1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 892px;
+  z-index: -1;
+  box-shadow: 0px 4px 16px 0px #4B008142;
+  opacity: 20%;
+
+  @media (min-width: $screen-xl) {
+    height: 768px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.stores {
+  @include stores();
+}
+
+input::placeholder {
+  opacity: 50%;
+}
+
+.wpcf7-spinner {
+  display: none;
+}

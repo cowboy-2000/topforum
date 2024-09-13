@@ -1,0 +1,131 @@
+.site-footer {
+  color: $color3;
+  background-color: $color6;
+  text-align: center;
+  padding: 35px 0 0;
+
+  @media (min-width: $screen-xl) {
+    text-align: left;
+    padding-top: 48px;
+  }
+
+  &__container {
+    max-width: 1192px;
+  }
+
+  &__logo {
+    margin-bottom: 40px;
+  }
+
+  &__row {
+    &--sub {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__col {
+    display: flex;
+    flex-direction: column;
+
+    &--socials {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0 80px 16px;
+    }
+
+    &--copyright {
+      padding: 20px 0;
+      border-top: 1px solid $color3;
+    }
+
+    &:first-child {
+      @media (min-width: $screen-xl) {
+        margin-right: 51px;
+        width: 203px;
+      }
+    }
+
+    &:last-child {
+      @media (min-width: $screen-xl) {
+        max-width: 418px;
+        width: 100%;
+        margin-left: -50px;
+      }
+    }
+
+    @media (min-width: $screen-xl) {
+      width: 198px;
+    }
+  }
+
+  &__title {
+    font-family: $font1;
+    font-size: $fs8;
+    text-decoration: 3px underline;
+    margin: 7px 0 25px;
+    text-underline-offset: 8px;
+
+    @media (min-width: $screen-xl) {
+      font-size: $fs2;
+      text-decoration: 2px underline;
+      margin: 9px 0 23px;
+      text-underline-offset: 7px;
+    }
+
+    &--form {
+      margin: 32px 0 11px;
+      text-decoration: none;
+      font-size: $fs2;
+      font-family: $font2;
+      line-height: 26px;
+
+      @media (min-width: $screen-xl) {
+        font-family: $font1;
+        margin: 8px 0 20px;
+      }
+    }
+  }
+
+  &__link {
+    font-size: $fs2;
+    margin-bottom: 17px;
+
+    @media (min-width: $screen-xl) {
+      font-size: $fs6;
+      margin-bottom: 16px;
+    }
+  }
+
+  .wpcf7-form{
+    margin-bottom: 31px;
+  }
+
+  .wpcf7-validates-as-email {
+    color: $color2;
+    border: none;
+    border-radius: 3px;
+    width: 100%;
+    font-size: $fs6;
+    margin-bottom: 11px;
+    padding: 16px 40px 13px;
+  }
+
+  .wpcf7-submit {
+    border-radius: 3px;
+    font-size: $fs7;
+    color: $color6;
+    width: 100%;
+    background-color: $color3;
+    border: none;
+    padding: 16px 0 13px;
+  }
+
+
+
+
+  &__text {
+    font-family: $font1;
+    font-size: $fs11;
+    margin: 0 0 0 18px;
+  }
+}

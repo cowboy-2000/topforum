@@ -1,0 +1,36 @@
+@mixin stores($backgroundColor: $color2, $borderRadius: 5px) {
+  display: flex;
+  gap: 0 18px;
+
+  @media (min-width: $screen-xl) {
+    gap: 0 20px;
+  }
+
+  &__block {
+    background-color: $backgroundColor;
+    border-radius: $borderRadius;
+    width: 168px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: $screen-xl) {
+      width: 180px;
+      height: 60px;
+    }
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__image {
+    width: fit-content;
+    height: fit-content;
+  }
+}

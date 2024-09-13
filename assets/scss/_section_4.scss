@@ -1,0 +1,144 @@
+.section_4 {
+  padding: 140px 0;
+
+  @media (min-width: $screen-xl) {
+    padding-top: 150px;
+  }
+
+  &__container {
+    @media (min-width: $screen-xl) {
+      max-width: 100%;
+    }
+  }
+
+  .carousel-item
+
+  {&__col {
+    @media (min-width: $screen-xl) {
+      position: relative;
+    }
+  }}
+
+  .col-md-6 {
+    @media (min-width: $screen-xl) {
+      width: 47%;
+    }
+
+    &:last-child {
+      @media (min-width: $screen-xl) {
+        margin-left: auto;
+      }
+    }
+  }
+
+  &__title {
+    font-family: $font1;
+    font-size: $fs9;
+    color: $color1;
+    text-align: center;
+    margin-bottom: 13px;
+
+    @media (min-width: $screen-xl) {
+      font-size: $fs5;
+      letter-spacing: 1px;
+      text-align: left;
+    }
+  }
+
+  .carousel {
+    .carousel-item {
+      &__col {
+        @media (min-width: $screen-xl) {
+          position: relative;
+        }
+      }
+
+      &__image {
+        margin: 0 auto 58px;
+        display: block;
+      }
+
+      &__background {
+        position: absolute;
+        background-color: #ffe9d0;
+        border-radius: 0 6px 6px 0;
+        z-index: -1;
+        height: 210px;
+        top: 99px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        @media (min-width: $screen-xl) {
+          top: 84px;
+          height: auto;
+        }
+      }
+
+      &__content {
+        position: relative;
+        padding-top: 61px;
+
+        @media (min-width: $screen-xl) {
+          margin-top: 137px;
+          padding-top: 115px;
+        }
+
+        svg {
+          position: absolute;
+          z-index: -1;
+          top: 0;
+          opacity: 50%;
+
+          @media (min-width: $screen-xl) {
+            width: 50px;
+          }
+        }
+      }
+
+      &__text {
+        font-size: $fs7;
+        color: $color1;
+        line-height: 26px;
+        margin-bottom: 10px;
+        opacity: 50%;
+
+        @media (min-width: $screen-xl) {
+          width: 400px;
+          margin-bottom: 17px;
+        }
+      }
+
+      &__link {
+        font-size: $fs2;
+
+        @media (min-width: $screen-xl) {
+          font-family: $font2;
+        }
+      }
+    }
+
+    &__control {
+      display: flex;
+      float: right;
+      box-shadow: 0px 4px 16px 0px #00000014;
+    }
+
+    .carousel-control-prev, .carousel-control-next {
+      position: static;
+      opacity: 1;
+      width: auto;
+      padding: 17px 16px 14px 16px;
+    }
+
+    .carousel-control-prev {
+      background-color: $color6;
+      border-radius: $borderRadius1 0 0 $borderRadius1;
+    }
+
+    .carousel-control-next {
+      background-color: $color3;
+      border-radius: 0 $borderRadius1 $borderRadius1 0;
+    }
+  }
+}

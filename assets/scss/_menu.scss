@@ -1,0 +1,121 @@
+.navbar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+
+  @media (min-width: $screen-xl) {
+    position: static;
+  }
+
+  .navbar-toggler {
+    border: none;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    position: absolute;
+    width: auto;
+    top: $padding2;
+    right: $padding1;
+
+    @media (min-width: $screen-xl) {
+      display: none;
+    }
+
+    &:hover, &:focus {
+      box-shadow: none;
+    }
+
+    &__icon-bar {
+      width: 22px;
+      height: 4px;
+      background-color: $color3;
+      margin-bottom: 5px;
+    }
+  }
+
+  &__collapse {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    @media (min-width: $screen-xl) {
+      position: static;
+    }
+
+    &.collapsed {
+      display: block;
+    }
+  }
+
+  .collapsed {
+    display: block;
+  }
+
+  &__list {
+    position: absolute;
+    top: 126px;
+    right: 0;
+    left: 0;
+
+    @media (min-width: $screen-xl) {
+      position: static;
+    }
+  }
+
+  &__item {
+    @media (min-width: $screen-xl) {
+      margin-left: 55px;
+    }
+
+    &:last-child {
+      @media (min-width: $screen-xl) {
+        display: none;
+      }
+    }
+  }
+
+  &__link {
+    font-size: $fs1;
+    color: $color1;
+    padding: 25px 0 24px;
+    display: block;
+
+    @media (min-width: $screen-xl) {
+      font-size: $fs2;
+      background-color: inherit;
+      padding: 0;
+    }
+
+    &--active {
+      color: $color6;
+
+      &:hover {
+        color: inherit;
+      }
+    }
+
+    &:hover {
+      color: $color3;
+      background-color: $color6;
+
+      @media (min-width: $screen-xl) {
+        color: inherit;
+        background-color: inherit;
+      }
+    }
+
+    &--close {
+      padding: 7px 0;
+      width: fit-content;
+      margin: 0 auto;
+
+      &:hover {
+        background-color: transparent;
+      }
+    }
+  }
+}

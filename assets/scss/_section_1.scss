@@ -1,0 +1,75 @@
+.section_1 {
+  @media (min-width: $screen-xl) {
+    padding-bottom: 47px;
+  }
+
+  &__content {
+    padding: 74px 1px 0 0;
+  }
+
+  .stores {
+    &.d-md {
+      display: none;
+
+      @media (min-width: $screen-xl) {
+        display: flex;
+      }
+    }
+
+    &.d-sm {
+      @media (min-width: $screen-xl) {
+        display:none;
+      }
+    }
+  }
+
+  font-family: $font1;
+
+  &__title {
+    font-size: $fs3;
+    line-height: 48px;
+    color: $color2;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+
+    @media (min-width: $screen-xl) {
+      font-size: $fs5;
+      line-height: 70px;
+    }
+  }
+
+  &__text {
+    font-size: $fs4;
+    line-height: 26px;
+    color: $color2;
+    font-weight: 100;
+    letter-spacing: 0.06px;
+    margin-bottom: 18px;
+
+    @media (min-width: $screen-xl) {
+      font-weight: 400;
+      line-height: 36px;
+      letter-spacing: 0;
+      margin-bottom: 62px;
+    }
+  }
+
+  &__image {
+    margin-bottom: 27px;
+
+    @media (min-width: $screen-xl) {
+      margin-left: 19px;
+      width: 441px;
+      height: 534px;
+    }
+  }
+
+  .stores {
+    @include stores($backgroundColor: $color4);
+    margin-bottom: 64px;
+
+    @media (min-width: $screen-xl) {
+      @include stores();
+    }
+  }
+}
