@@ -23,7 +23,7 @@ Ensure you have the following installed on your system:
 
 ### Steps
 1. **Download the Files**
-   - Download the website files from [cowboy-2000.github/topforum/](http://cowboy-2000.github/topforum/).
+   - Download the website files from [github.com/cowboy-2000/topforum/](http://github.com/cowboy-2000/topforum/).
 
 2. **Copy Required Folders**
    Copy the following folders into your WordPress installation:
