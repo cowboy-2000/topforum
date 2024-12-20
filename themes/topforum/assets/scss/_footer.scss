@@ -1,0 +1,115 @@
+.site-footer {
+  background-color: $color1;
+  font-size: $fs10;
+
+  p {
+    font-size: $fs10;
+    color: $color3;
+    line-height: 21px;
+    font-weight: 400;
+    text-align: left;
+    text-align-last: left;
+    margin: 0 0 16px;
+  }
+
+  .row {
+    padding: 26px 0 37px;
+    @include border($side: top, $color: $color16);
+
+    &:first-child {
+      padding: 39px 0 21px;
+    }
+  }
+
+  .col-md-12 {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $screen-md) {
+      flex-direction: row;
+    }
+  }
+
+  .tops {
+    color: $color7;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  .top_forum {
+    margin-left: 3px;
+    padding: 4px 60px 45px 0;
+
+    &__list {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    &__item {
+      margin-top: $indentFooter;
+    }
+
+    &__link {
+      color: $color3;
+      text-decoration: none;
+    }
+
+    .nav {
+      flex-direction: column;
+    }
+  }
+
+  .contact {
+    margin-bottom: 20px;
+
+    @media (min-width: $screen-md) {
+      @include border($side: left, $color: $color16);
+      margin-bottom: 0;
+      padding-left: 44px;
+    }
+
+    &__text {
+      margin: $indentFooter 0 0;
+    }
+
+    &__link {
+
+      &--email {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .follow_us, .website_development {
+
+    @media (min-width: $screen-md) {
+    margin-left: auto;
+    }
+  }
+
+  .copyright {
+    padding-top: 7px;
+  }
+  
+
+  .website_development {
+    display: flex;
+
+    &__text {
+      color: $color17;
+      line-height: 19.5px;
+      font-size: $fs2;
+      margin: 7px 10px 0 0;
+      font-weight: 300;
+    }
+
+    &__link {
+      margin-right: -1px;
+    }
+
+    &__image {
+      max-width: none;
+    }
+  }
+}

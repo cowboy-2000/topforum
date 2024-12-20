@@ -1,0 +1,41 @@
+.our_sponsors {
+
+  .sponsors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 51px 0;
+    margin-bottom: 58px;
+
+    @media (min-width: $screen-xl) {
+      gap: 51px 1px;
+      margin: 0 -3 - $indentRow 58px -2px;
+    }
+
+    & > * {
+      padding: 0 $indentRow - 1 0 $indentRow - 2;
+    }
+
+    .sponsor {
+
+      &__title {
+        margin-bottom: 16px;
+        
+        &--brand {
+          margin-bottom: 9px;
+        }
+      }
+
+      @include elementBlock;
+
+      &__link {
+        display: block;
+        @include border($color: $color19);
+        border-radius: 2px;
+        margin: 0 auto 17px;
+        padding: 1px;
+        width: fit-content;
+      }
+    }
+  }
+}

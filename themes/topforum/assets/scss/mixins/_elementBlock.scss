@@ -1,0 +1,21 @@
+@mixin elementBlock($marginLeft: 0, $withoutLink: false) {
+
+    &__text {
+        font-size: $fs1;
+        line-height: 20px;
+        margin: 0 0 14px $marginLeft;
+    }
+
+    @if $withoutLink == false {
+
+        .learn_more {
+
+            &__link {
+                margin-bottom: 9px;
+                padding: 11px 0 8px;
+                width: 120px;
+                border: none;
+            }
+        }
+    }
+}

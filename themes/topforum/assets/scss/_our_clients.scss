@@ -1,0 +1,29 @@
+.our_clients {
+  background-color: $color13;
+
+  &__title {
+    margin: 38px 0 28px 2px;
+  }
+
+  .carousel2 {
+    margin-bottom: 71px;
+
+    .carousel2-element {
+
+      &__link {
+        background-color: $color3;
+        display: block;
+        padding: 35px 15px 36px 23px;
+        width: max-content;
+        margin: 0 auto;
+
+        @media (min-width: $screen-md) {
+          width: auto;
+          margin: 0;
+        }
+      }
+    }
+
+    @include owlNav($top-md: 38px);
+  }
+}

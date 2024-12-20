@@ -1,0 +1,95 @@
+.feedback {
+  background-color: $color13;
+  padding-bottom: 45px;
+
+  &__title {
+    margin: 43px 0 3px;
+  }
+
+  &__label {
+    margin: 0 0 7px 2px;
+  }
+
+  &__your_contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 0 $gapContacts;
+
+    @media (min-width: $screen-md) {
+      flex-direction: row;
+    }
+    
+    .wpcf7-form-control-wrap {
+      margin-bottom: 17px;
+    }
+  }
+
+  &__input, &__textarea {
+    @include border($color: $color2);
+    padding: 16px 13px 14px;
+    font-size: $fs11;
+    font-weight: 300;
+    color: $color12;
+  }
+
+  &__input {
+    width: 100%;
+  }
+
+  &__textarea {
+    width: 100%;
+    height: 115px;
+    margin-bottom: 15px;
+    resize: none;
+  }
+
+  &__button {
+    font-size: $fs2;
+    color: $color3;
+    background-color: $color7;
+    border: none;
+    font-weight: 400;
+    margin: 0 -1px 0 auto;
+    width: 111px;
+    padding: 11px 0;
+  }
+
+  .questions {
+    margin-top: 27px;
+
+    &__text {
+      color: $color1;
+      text-align: left;
+      text-align-last: left;
+      font-size: $fs1;
+      line-height: 20px;
+      margin-bottom: 7px;
+      
+      &--fw-500 {
+        font-weight: 500;
+      }
+
+      &--fw-600 {
+        font-weight: 600;
+        font-size: $fs13;
+        line-height: 24px;
+        margin-bottom: 9px;
+      }
+
+      &--fw-400 {
+        font-weight: 400;
+        letter-spacing: 0.1px;
+        margin-bottom: 8px;
+      }
+
+      &--fw-300 {
+        font-weight: 300;
+      }
+    }
+
+    &__link {
+      color: $color7;
+      text-decoration: underline;
+    }
+  }
+}

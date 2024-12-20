@@ -1,0 +1,158 @@
+.navbar {
+
+  &__toggler {
+    margin-top: $marginHeaderTop;
+    padding: 0;
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+  &__collapse {
+
+    &.collapsed {
+      display: block;
+    }
+  }
+  
+  &__list {
+    margin: 26px 0 0 0;
+    z-index: 2;
+
+    @media (min-width: $screen-lg) {
+      margin: 0 0 0 -18px;
+    }
+    
+    &--submenu {
+      background-color: $color3;
+      @include border($color: $color6);
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      display: none;
+      left: 105px;
+      width: 180px;
+
+      @media (min-width: $screen-lg) {
+        width: 295px;
+        left: 0;
+        margin-left: 0;
+      }
+    }
+  }
+
+  &__item {
+    margin-left: -1px;
+
+    &--submenu {
+      list-style-type: none;
+      
+      &:hover, &:visited {
+        position: relative;
+        z-index: 1;
+        background-color: $color6;
+      }
+
+      &:first-child {
+
+        & > a {
+          padding: 15px 0 12px 21px;
+          border-top: none;
+        }
+      }
+
+      &:last-child {
+
+        & > a {
+          padding: 14px 0 11px 21px;
+          border-bottom: none;
+        }
+      }
+    }
+
+    &:first-child {
+
+      & > a {
+        padding: 17px 19px 16px 21px;
+        border-left: none;
+      }
+    }
+
+    &:last-child {
+      
+      & > a {
+        border-right: none;
+      }
+    }
+
+    &:hover, &:visited {
+      position: relative;
+      z-index: 1;
+      color: $color3;
+      background-color: $color5;
+
+      .sub-menu {
+        display: block;
+      }
+    }
+
+    &--submenu {
+      list-style-type: none;
+
+      &:hover, &:visited {
+        position: relative;
+        z-index: 1;
+        background-color: $color6;
+      }
+
+      &:first-child {
+
+        & > a {
+          padding: 15px 0 12px 21px;
+          border-top: none;
+        }
+      }
+
+      &:last-child {
+        
+        & > a {
+          padding: 14px 0 11px 21px;
+          border-bottom: none;
+        }
+      }
+    }
+  }
+
+  &__link {
+    font-size: $fs1;
+    color: $color3;
+    display: block;
+    text-decoration: none;
+    padding: 17px 19px 16px 20px;
+    width: 100%;
+    border: none;
+    float: left;
+
+    @media (min-width: $screen-lg) {
+      @include border($side: left);
+      @include border($side: right);
+      border-image: linear-gradient(to bottom, transparent 18%, $color4 18% 80%, transparent 80%) 1;
+      float: none;
+    }
+
+    &--submenu {
+      @include border($side: top);
+      @include border($side: bottom);
+      border-image: linear-gradient(to right, transparent 4%, $color6 4%, $color6 96%, transparent 96%) 1;
+      margin-top: -1px;
+      font-size: $fs1;
+      color: $color1;
+      display: block;
+      font-weight: 300;
+      text-decoration: none;
+      padding: 14px 0 10px 21px;
+      float: none;
+    }
+  }
+}

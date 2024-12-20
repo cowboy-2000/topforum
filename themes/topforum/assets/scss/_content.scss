@@ -1,0 +1,66 @@
+.content {
+
+  &__text {
+    font-size: $fs6;
+    color: $color1;
+    line-height: 30px;
+    text-align: justify;
+    font-weight: 300;
+    text-align-last: center;
+    margin: 58px -3px 54px;
+  }
+
+  .content_blocks {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+    & > * {
+      flex: 1;
+    }
+
+    &__image {
+      margin: 0 auto 21px;
+    }
+
+    &__title {
+      line-height: 24px;
+      margin-bottom: 9px;
+    }
+
+    &__text {
+      font-size: $fs1;
+      color: $color1;
+      line-height: 24px;
+      margin: 0 0 16px;
+      text-align: justify;
+      text-align-last: center;
+      font-weight: 300;
+
+      &--wealth {
+        font-size: $fs7;
+        color: $color10;
+        text-align: center;
+        font-weight: 400;
+      }
+    }
+  }
+
+  .buttons {
+    margin: 0 0 49px;
+    text-align: center;
+    padding-left: 29px;
+  }
+
+  &__button {
+    letter-spacing: 0.1px;
+    margin: 15px 11px 0 0;
+    display: inline-block;
+    @include buttonRegister;
+
+    &--subscribe {
+      background-color: $color1;
+      padding: 12px 0 10px;
+    }
+  }
+}

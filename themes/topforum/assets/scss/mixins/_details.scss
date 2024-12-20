@@ -1,0 +1,31 @@
+@mixin details {
+
+    &__wrapper_image {
+        max-width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__text {
+
+        br {
+            margin-bottom: 8px;
+        }
+    }
+
+    .images {
+        margin: 43px 0 - $indentRow 46px;
+        justify-content: center;
+        gap: 10px 0;
+
+        & > * {
+            text-align: center;
+        }
+
+        &__image {
+            @include border($color: $color20);
+            border-radius: 1px;
+        }
+    }
+}

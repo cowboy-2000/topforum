@@ -1,0 +1,21 @@
+.detail_sponsor {
+    margin-bottom: 10px;
+
+    @include details;
+
+    &__text {
+        margin-left: 0;
+
+        &--description {
+            margin-bottom: 41px;
+        }
+    }
+
+    &__wrapper_image {
+        @include border($color: $color20);
+        border-radius: 2px;
+        width: 518px;
+        margin-bottom: 30px;
+        padding: 2px 0;
+    }
+}

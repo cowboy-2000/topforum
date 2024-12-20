@@ -1,0 +1,176 @@
+.registration {
+    
+    &__title {
+        margin: 45px 0 34px 2px;
+    }
+
+    .col-md-12 {
+        text-align: center;
+    }
+
+    &__step {
+        display: block;
+        @include border($width: 2px, $color: $color7);
+        font-size: $fs10;
+        color: $color7;
+        text-decoration: none;
+        @include maxWidth(414px);
+        margin: -1px auto 0;
+        padding: 17px 0 16px;
+        font-weight: 500;
+    }
+
+    &__next {
+        margin-top: -4px;
+    }
+
+    #wpcf7-f1082-o1 {
+        margin: 45px auto 43px;
+        @include maxWidth(653px);
+
+        .row {
+            margin-bottom: 11px;
+        }
+
+        .label-block {
+            padding: 12px 15px 14px 12px;
+            width: 242px;
+        }
+    }
+
+    &__field {
+        padding: 0;
+        width: $widthField;
+    }
+
+    &__link {
+        text-decoration: underline;
+    }
+
+    .for_select {
+
+        & > span {
+            padding: 16px 0 11px;
+            cursor: pointer;
+            font-size: $fs10;
+            font-weight: 500;
+            color: $color1;
+            text-transform: uppercase;
+            background-color: $color21;
+            display: inline-block;
+            border: none;
+            text-align: center;
+            margin-right: 3px;
+        }
+
+        & > .selected {
+            background-color: $color22;
+        }
+    }
+
+    &__send {
+        @include maxWidth($widthField);
+        margin-top: 31px;
+        @include align_items_center;
+
+        @media (min-width: $screen-md) {
+            margin-left: auto;
+        }
+
+        .wpcf7-form-control-wrap {
+            @include align_items_center;
+        }
+
+        label {
+            display: flex;
+            font-size: $fs10;
+            color: $color12;
+            font-weight: 300;
+            flex-wrap: wrap;
+        }
+    }
+
+    .delegate_package {
+
+        & > span {
+            width: 119px;
+        }
+    }
+
+    .method_of_payment {
+        display: flex;
+        gap: 0 2px;
+
+        & > span {
+            font-weight: 900;
+            flex-grow: 1;
+            flex-basis: 0;
+            margin-right: 0;
+        }
+    }
+
+    &__input {
+        @include border($color: $color2);
+        padding: 12px 11px;
+        width: 100%;
+    }
+
+    .select {
+        width: 100%;
+        margin-bottom: 0;
+        float: left;
+    }
+
+    .wpcf7-list-item {
+        margin: 0;
+    }
+
+    input[type="checkbox"] {
+        display: none;
+
+        & + .wpcf7-list-item-label {
+            @include align_items_center;
+            font-size: $fs10;
+            color: $color12;
+            font-weight: 300;
+
+            &::before {
+                content: "";
+                display: inline-block;
+                width: 19px;
+                height: 19px;
+                @include border($side: top, $color: $color2);
+                @include border($side: right, $color: adjust-color($color2, $red: -7, $green: -7, $blue: +17));
+                @include border($side: bottom, $color: $color2);
+                @include border($side: left, $color: adjust-color($color2, $red: -7, $green: -7, $blue: +17));
+                cursor: default;
+                margin-right: 9px;
+            }
+        }
+
+        &:checked {
+
+            & + .wpcf7-list-item-label {
+
+                &::before {
+                    background: url('http://topforum/wp-content/themes/topforum/assets/images/07_REGISTRATION_04.png') no-repeat;
+                }
+            }
+        }
+    }
+
+    .wpcf7-checkbox {
+        @include align_items_center;
+    }
+
+    &__submit {
+        font-size: $fs2;
+        color: $color3;
+        text-transform: uppercase;
+        background-color: $color7;
+        margin-left: auto;
+        padding: 11px 0;
+        width: 112px;
+        letter-spacing: 0.2px;
+    }
+}

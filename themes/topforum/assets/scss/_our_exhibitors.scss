@@ -1,0 +1,29 @@
+.our_exhibitors {
+
+  .exhibitors {
+    margin: 0 0 - $indentRow 57px;
+    gap: 62px 0;
+
+    .exhibitor {
+      padding: 0 $indentRow;
+      
+      &__title {
+
+        &--brand {
+          margin-bottom: 9px;
+        }
+      }
+      
+      @include elementBlock;
+
+      &__link {
+        display: block;
+        @include border($color: $color19);
+        border-radius: 2px;
+        margin: 0 auto 17px;
+        padding: 1px;
+        width: fit-content;
+      }
+    }
+  }
+}

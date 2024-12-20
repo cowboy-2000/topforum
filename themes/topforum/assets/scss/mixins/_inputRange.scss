@@ -1,0 +1,23 @@
+@mixin inputRange {
+  -webkit-appearance: none !important;
+  background-color: $color15;
+  height: 6px;
+  cursor: pointer;
+
+  &::-moz-range-thumb {
+    border: none;
+    height: 10px;
+    width: 10px;
+    background-color: $color7;
+    border-radius: 8px;
+  }
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    background-color: $color7;
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+    cursor: pointer;
+  }
+}

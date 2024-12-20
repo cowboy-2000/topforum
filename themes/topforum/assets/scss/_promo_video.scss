@@ -1,0 +1,117 @@
+.promo_video {
+
+  &__title {
+    margin: 54px 0 19px 3px;
+  }
+
+  .video_player_box {
+    @include maxWidth(682px);
+    background-color: $color11;
+    margin: 0 auto 59px;
+    position: relative;
+
+    &__my_video {
+      @include maxWidth(682px);
+      margin: 0 auto 13px;
+      display: flex;
+    }
+
+    &__playpause {
+      position: absolute;
+      width: 91px;
+      height: 91px;
+      top: calc(50% - 55px);
+      left: calc(50% - 43px);
+      cursor: pointer;
+    }
+
+    &__playpausebkgr {
+      background: url('http://topforum/wp-content/themes/topforum/assets/images/01_index_16.png') no-repeat;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      opacity: 0.54;
+    }
+
+    &__playpauseicon {
+      background: url('http://topforum/wp-content/themes/topforum/assets/images/01_index_15.png') no-repeat;
+      width: 19px;
+      height: 39px;
+      position: absolute;
+      top: calc(50% - 19px);
+      left: calc(50% - 5px);
+    }
+
+    &__video_controls_bar {
+      background-color: $color1;
+      padding: 7px 0;
+      font-weight: 100;
+      font-size: $fs11;
+      color: $color3;
+      @include align_items_center;
+
+      & > * {
+        flex-shrink: 0;
+      }
+    }
+
+    &__seekslider {
+      @include inputRange;
+      width: 495px;
+      margin-left: 18px;
+      border-radius: 8px;
+      max-width: calc(100% - 188px);
+    }
+
+    &__mute {
+      position: relative;
+      width: 33px;
+      height: 20px;
+    }
+
+    &__mutebtn {
+      width: 11px;
+      height: 11px;
+      background: url('http://topforum/wp-content/themes/topforum/assets/images/01_index_17.png') no-repeat;
+      position: absolute;
+      top: 4px;
+      left: 21px;
+    }
+
+    &__quality {
+      margin: 1px 0 0 10px;
+    }
+
+    &__volumeslider_block {
+      display: none;
+      transform: rotate(-90deg);
+      top: -44px;
+      left: -17px;
+      position: absolute;
+    }
+
+    &__volumeslider {
+      @include inputRange;
+      width: 80px;
+    }
+
+
+    &__playpausebtn {
+      margin-left: 16px;
+      background: url('http://topforum/wp-content/themes/topforum/assets/images/01_index_18.png') no-repeat;
+      width: 10px;
+      height: 14px;
+    }
+
+    &__remaining_timetext {
+      margin: 2px 0 0 11px;
+    }
+
+    &__fullscreenbtn {
+      background: url('http://topforum/wp-content/themes/topforum/assets/images/01_index_20.png') no-repeat;
+      width: 16px;
+      height: 16px;
+      margin-left: 12px;
+    }
+  }
+}

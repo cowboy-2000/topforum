@@ -1,0 +1,4 @@
+@mixin maxWidth($width) {
+    width: $width;
+    max-width: 100%;
+}

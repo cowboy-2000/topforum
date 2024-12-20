@@ -1,0 +1,10 @@
+@mixin buttonRegister {
+  background-color: $color7;
+  font-size: $fs2;
+  color: $color3;
+  padding: 12px 0 10px;
+
+  &:active, &:visited {
+    color: $color3;
+  }
+}

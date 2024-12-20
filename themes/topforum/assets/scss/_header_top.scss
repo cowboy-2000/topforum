@@ -1,0 +1,14 @@
+.header-top {
+  background-color: $color1;
+
+  .row {
+    flex-direction: row;
+  }
+
+  &__button {
+    background-color: $color2;
+    color: $color1;
+    margin: $marginHeaderTop 0 9px;
+    float: right;
+  }
+}

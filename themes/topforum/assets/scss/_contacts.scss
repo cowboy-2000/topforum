@@ -1,0 +1,35 @@
+.contacts {
+    padding: 34px 0 71px;
+    
+    .contact {
+        padding: 3px 0 10px;
+
+        &__text {
+            font-size: $fs1;
+            text-align: left;
+            text-align-last: left;
+            color: $color1;
+            font-weight: 300;
+            margin-bottom: 2px;
+            line-height: inherit;
+
+            &--header {
+                font-weight: 400;
+                text-transform: uppercase;
+            }
+
+            &--name {
+                font-weight: 400;
+                margin-bottom: 1px;
+            }
+        }
+
+        &__link {
+
+            &--email {
+                text-decoration: underline;
+                color: $color7;
+            }
+        }
+    }
+}

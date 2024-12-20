@@ -1,0 +1,80 @@
+.modal {
+  background-color: rgba(red($color11), blue($color11), green($color11), 0.4);
+
+  .modal-dialog {
+    margin: 210px auto 0;
+    padding: 0 20px;
+    @include maxWidth(421px);
+
+    @media (min-width: $screen-md) {
+      padding: 0;
+    }
+  }
+
+  &__title {
+    letter-spacing: 0.2px;
+    margin-bottom: 6px;
+  }
+
+  .modal-content {
+    border: 2px solid $color7;
+    border-radius: 0;
+    padding: 27px 27px 29px;
+  }
+
+  &__text {
+    font-size: $fs1;
+    color: $color1;
+    line-height: 20px;
+    font-weight: 300;
+    margin: 0 0 24px;
+    text-align: center;
+  }
+
+  &__input {
+    font-size: $fs2 + 1;
+    color: $color12;
+    text-transform: uppercase;
+    font-weight: 300;
+    border: 1px solid $color2;
+    width: 100%;
+    margin-bottom: 6px;
+    padding: 14px 2px 13px 0;
+    letter-spacing: 0.1px;
+    text-align: center;
+  }
+
+  &__submit {
+    font-size: $fs2;
+    background-color: $color7;
+    border: none;
+    border-radius: 0;
+    text-transform: uppercase;
+    margin-top: 6px;
+    padding: 12px 0 11px;
+    width: 129px;
+    letter-spacing: 0.2px;
+
+    &:hover {
+      background-color: $color7;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: -18px;
+    right: -18px;
+    background-color: transparent;
+    background: url('http://topforum/wp-content/themes/topforum/assets/images/08_Subscribe_03.png') no-repeat;
+    padding: 0;
+    opacity: 1;
+    width: 18px;
+    height: 18px;
+    border-radius: 0;
+
+    @media (min-width: $screen-md) {
+      top: -24px;
+      right: -24px;
+    }
+  }
+}

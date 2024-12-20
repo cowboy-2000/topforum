@@ -1,0 +1,29 @@
+.our_speakers {
+
+  .speakers {
+    text-align: center;
+    margin-bottom: 61px;
+    gap: 42px 0;
+
+    @media (min-width: $screen-xl) {
+      margin: 0 -2 - $indentRow 61px 1 - $indentRow;
+    }
+
+    .speaker {
+      padding: 0 $indentRow;
+
+      &__title {
+
+        &--brand {
+          margin-bottom: 9px;
+        }
+      }
+
+      @include elementBlock;
+
+      &__image {
+        margin: 1px 0 14px;
+      }
+    }
+  }
+}

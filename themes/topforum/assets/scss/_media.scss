@@ -1,0 +1,29 @@
+.media {
+  &__text {
+    margin-bottom: 41px;
+  }
+  .articles {
+    text-align: center;
+    margin: 0 0 - $indentRow 17px;
+    gap: 38px 0;
+    .article {
+      padding: 0 $indentRow;
+      &__title {
+        margin-bottom: 9px;
+      }&__image {
+        margin-bottom: 19px;
+        @include border($color: $color20);
+        border-radius: 1px; }
+      &__link {
+        &:hover {
+          color: $color7;
+          text-decoration: underline;
+        }
+      }
+      @include elementBlock(1px, true);
+}}
+  .more_article {
+    &__link {
+      margin-bottom: 61px;
+    }}
+}

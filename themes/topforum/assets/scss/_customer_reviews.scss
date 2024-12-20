@@ -1,0 +1,84 @@
+.customer_reviews {
+  background-color: $color13;
+
+  &__title {
+    margin: 49px 0 34px 2px;
+  }
+
+  .carousel1 {
+    margin-bottom: 60px;
+
+    &__element {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+
+      @media (min-width: $screen-md) {
+        flex-direction: row;
+      }
+    }
+
+    .carousel1-element {
+
+      &__image {
+        margin-left: 1px;
+      }
+
+      &__review {
+        position: relative;
+        background-color: $color3;
+        border-radius: 2px;
+        margin-top: 24px;
+        padding: 23px 27px 28px 29px;
+
+        @media (min-width: $screen-md) {
+          margin: 0 0 0 35px;
+        }
+
+        &::after {
+          content: '';
+          position: absolute;
+          left: 39px;
+          top: -44px;
+          @include border($width: 22px, $color: transparent);
+          @include border($side: bottom, $width: 22px, $color: $color3);
+
+          @media (min-width: $screen-md) {
+            top: 39px;
+            left: -44px;
+            @include border($width: 22px, $color: transparent);
+            @include border($side: right, $width: 22px, $color: $color3);
+          }
+        }
+      }
+    }
+
+    @include owlNav($top-md: 74px);
+  }
+
+  .review {
+
+    &__title {
+      margin: 0 0 7px 1px;
+      text-align: left;
+      text-transform: none;
+    }
+
+    &__time {
+      font-size: $fs9;
+      color: $color3;
+      text-transform: uppercase;
+      background-color: $color14;
+      display: inline-block;
+      border-radius: 2px;
+      padding: 9px 18px 9px 16px;
+    }
+
+    &__text {
+      font-size: $fs10;
+      text-align-last: left;
+      line-height: 22px;
+      margin: 11px 0 0 1px;
+    }
+  }
+}

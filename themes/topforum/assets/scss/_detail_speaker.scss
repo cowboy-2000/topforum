@@ -1,0 +1,18 @@
+.detail_speaker {
+    margin-bottom: 1px;
+
+    @include details;
+
+    &__text {
+        margin-bottom: 50px;
+        
+        &--description {
+            margin-bottom: 25px;
+        }
+    }
+
+    &__wrapper_image {
+        width: 327px;
+        margin-bottom: 29px;
+    }
+}
